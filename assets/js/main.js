@@ -40,17 +40,19 @@ function logMeIn(){
 			const name = formInputs[2].value.split(' ');
 			const firstName = name[0];
 			const lastName = name[1];
-			const userId = email.split("@")[0];
+			const accountid = domain+"456"; 
+			const userId = email+"123";
 			// const uniqueNumber = "UID"+Math.floor(Math.random() * 9999999);
 			aptrinsic("identify",
 			{
-				"id" : email,
+				"id" : userId,
 				"email": email,
 				"firstName": firstName,
 				"lastName": lastName
 
 			},{
-				"id": domain //Required				
+				"id": accountid, //Required	
+				"name": domain
 			});
 			console.log(email,firstName,lastName,userId,domain);
 			alert("Logged in user id: "+ firstName);
