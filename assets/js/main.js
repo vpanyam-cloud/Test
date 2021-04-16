@@ -44,7 +44,7 @@ function logMeIn(){
 			// const uniqueNumber = "UID"+Math.floor(Math.random() * 9999999);
 			aptrinsic("identify",
 			{
-				"id" : userId,
+				"id" : email,
 				"email": email,
 				"firstName": firstName,
 				"lastName": lastName
